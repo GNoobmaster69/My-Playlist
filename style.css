@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: aqua;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+.Songlist{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 85vw;
+    margin: 20px auto;
+    background: url('1.webp');
+    background-position: center;
+    background-size: cover;
+    min-height: 120vh;
+    border-radius: 30px;
+}
+
+.bottom{
+    /* border: 1px solid black; */
+    height: 20vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+    bottom: 0;
+}
+
+.Songlist .songName{
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25vw;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.Songlist .playlist{
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fontawsome{
+    padding: 10px;
+    color: #fff;
+}
+
+.cover{
+    position: absolute;
+    margin-top: 40px;
+    right: 8vw;
+}
+
+.cover img{
+    width: 75px;
+}
+
+.songinfo{
+    left: 8vw;
+    color: #fff;
+    position: absolute;
+}
+
+.songinfo img{
+    opacity: 0;
+    transition: opacity 2s ease-in;
+}
+
+#Myprogressbar{
+    width: 85vw;
+}
+
+nav ul li{
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-content: center;
+}
+
+nav ul img{
+    padding: 0 8px;
+}
+
+#navbar{
+    font-size: 19px;
+}
